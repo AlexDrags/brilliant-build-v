@@ -1,0 +1,34 @@
+.products {
+  padding-bottom: 120px;
+}
+
+.products__swiper {
+  @include vp-767 {
+    padding-bottom: 1px;
+  }
+}
+
+.products__slide-prev,
+.products__slide-next {
+  width: 54px;
+  height: 54px;
+  border: 1px solid #303030;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.products__slide-prev {
+  background: url("../img/sprite/left-arrow.svg") no-repeat center;
+}
+
+.products__slide-next {
+  background: url("../img/sprite/rigth-arrow.svg") no-repeat center;
+}
+
+.products__navigation {
+  @include vp-767 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}

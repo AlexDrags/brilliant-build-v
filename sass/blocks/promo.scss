@@ -1,0 +1,10 @@
+.promo {
+  padding-top: 20px;
+}
+
+.promo__swiper-button-prev,
+.promo__swiper-button-next {
+  @include vp-767 {
+    display: none;
+  }
+}

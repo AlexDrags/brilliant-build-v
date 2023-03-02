@@ -1,0 +1,26 @@
+.telephone {
+  padding-left: 25px;
+  position: relative;
+
+  & a {
+    color: #303030;
+    text-decoration: none;
+    white-space: nowrap;
+
+    @include hover-focus {
+      &::before {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  & a::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url("../img/sprite/phone-icon.svg") no-repeat center;
+    left: 0;
+    fill: #303030;
+  }
+}

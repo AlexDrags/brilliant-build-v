@@ -1,0 +1,43 @@
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+
+  @include vp-767 {
+    justify-content: center;
+    row-gap: 10px;
+  }
+}
+
+.tablinks.active {
+  background-color: $color-default-black;
+  color: $color-default-white;
+}
+
+.tablinks {
+  border: none;
+  padding: 13px 30px;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+
+  &:not(:last-of-type) {
+    margin-right: 8px;
+  }
+
+  &:last-of-type {
+    margin-right: auto;
+
+    @include vp-767 {
+      margin-right: 0;
+    }
+  }
+
+  @include hover-focus {
+    background-color: #dddddd;
+  }
+}
+

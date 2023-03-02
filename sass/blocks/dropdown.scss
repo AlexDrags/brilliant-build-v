@@ -1,0 +1,74 @@
+/* Кнопка выпадающего списка */
+.dropbtn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  padding-left: 22px;
+  padding-right: 20px;
+
+
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   width: 9px;
+  //   height: 6px;
+  //   background: url("../img/sprite/select-icon.svg") no-repeat center;
+  //   right: 0;
+  //   top: 50%;
+  //   fill: #303030;
+  // }
+
+  @include hover-focus {
+    &::before,
+    &::after {
+      opacity: 0.5;
+    }
+  }
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 16px;
+    background: url("../img/sprite/marker-icon.svg") no-repeat center;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+  color: #000000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {
+  background-color: #dddddd;
+}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show {
+  display: block;
+}

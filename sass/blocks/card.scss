@@ -1,0 +1,62 @@
+.card {
+  border: 1px solid #c9c9c9;
+  padding-left: 24px;
+  padding-right: 24px;
+  min-width: 310px;
+  min-height: 370px;
+
+  @include vp-767 {
+    min-width: 290px;
+  }
+
+  & img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  & .title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.card__swiper-slide {
+  padding-top: 40px;
+}
+
+.card__set {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  right: 20px;
+  top: 20px;
+}
+
+.card__set a {
+  & svg {
+    fill: #c9c9c9;
+  }
+
+  @include hover-focus {
+    & svg {
+      fill: #979797;
+    }
+  }
+
+  &:active {
+    & svg {
+      fill: #e24b33;
+    }
+  }
+}
+
+.card__swiper-pagination .swiper-pagination-bullet {
+  background-color: transparent;
+  border: 1px solid #303030;
+}
+
+.card__swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #303030;
+}
