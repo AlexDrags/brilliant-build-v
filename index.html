@@ -1674,7 +1674,7 @@
 
       <section>
         <div class="container form">
-          <form action="#" id="form" class="form__body">
+          <!-- <form action="#" id="form" class="form__body">
             <h2 class="form__title">Send!</h2>
 
             <div class="form__item">
@@ -1735,7 +1735,12 @@
 
             <button class="form__button" type="submit">Отправить</button>
 
-          </form>
+          </form> -->
+          <form action="send.php" method="POST">
+            <input type="text" name="name" placeholder="Ваше имя">
+            <input type="text" name="phone" placeholder="Ваш телефон">
+            <input type="submit" class="btn" >
+        </form>
         </div>
       </section>
 
