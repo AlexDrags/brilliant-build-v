@@ -1,7 +1,7 @@
 <?php
 /* Здесь проверяется существование переменных */
-if (isset($_POST['name'])) {$phone = $_POST['name'];}
-if (isset($_POST['phone'])) {$name = $_POST['phone'];}
+if (isset($_POST['name'])) {$name = $_POST['name'];}
+if (isset($_POST['phone'])) {$phone = $_POST['phone'];}
 
 /* Сюда впишите свою эл. почту */
 $myaddres  = "ksander-88@yandex.ru"; // кому отправляем
